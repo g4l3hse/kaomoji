@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaoYao</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">KaoYao</a></div>
+        <nav>
+            <ul class="add">
+                <li><a href="watch.html">to watch</a></li>
+                <li><a href="map.html">map</a></li>
+                <li><a href="forest.html">forest</a></li>
+                <li><a href="mirror.html">mirror</a></li>
+                <li><a href="#">labyrinth</a></li>
+                <li><a href="wall.html">wall</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main-content">
+        <div id="text-section">
+          <p id="info-text">For every one that asketh receiveth; and he that seeketh findeth; and to him that knocketh it shall be opened.
+            For with what judgment you judge, you will be judged; and with the measure you use, it will be measured back to you.
+            Therefore, whatever you want men to do to you, do also to them.
+            Even so, every good tree bears good fruit, but a bad tree bears bad fruit. A good tree cannot bear bad fruit, nor can a bad tree bear good fruit.
+            But everyone who hears these sayings of Mine, and does not do them, will be like a foolish man who built his house on the sand.</p>
+        </div>
+        <div id="controls-section">
+          <div id="timer-section">
+            <span id="timer">10</span>
+          </div>
+          <div id="kaomoji-buttons">
+            <button class="kaomoji-btn" data-index="0">(´｡• ω •｡)</button>
+            <button class="kaomoji-btn" data-index="1">(*≧ω≦*)</button>
+            <button class="kaomoji-btn" data-index="2">(｡•́︿•̀｡)</button>
+            <button class="kaomoji-btn" data-index="3">(凸ಠ益ಠ)凸</button>
+            <button class="kaomoji-btn" data-index="4">(っ˘̩╭╮˘̩)っ</button>
+            <button class="kaomoji-btn" data-index="5">w(°ｏ°)w</button>
+          </div>
+          <button id="toggle-w">Emotion level</button>
+        </div>
+        <div id="maze-section">
+          <div id="sketch-holder" class="maze-sketch-holder"></div>
+        </div>
+      </div>
+
+      <div id="popup">
+        <p>You reached the end!</p>
+        <button onclick="closePopup()">Close</button>
+      </div>
+</body>
+<script src="js/maze.js"></script>
+</html>

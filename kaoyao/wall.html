@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaoYao</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">KaoYao</a></div>
+        <nav>
+            <ul>
+                <li><a href="watch.html">to watch</a></li>
+                <li><a href="map.html">map</a></li>
+                <li><a href="forest.html">forest</a></li>
+                <li><a href="mirror.html">mirror</a></li>
+                <li><a href="maze.html">labyrinth</a></li>
+                <li><a href="#">wall</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content-container">
+        <div class="container-wall" id="word-wall"></div>
+        <div id="input-section">
+            <div class="input-part description-part">
+                <div id="description" class="description-text">description will appear here</div>
+            </div>
+            <div class="input-part kaomoji-part">
+                <input id="word-input" type="text" placeholder="Kaomoji" readonly>
+                <input id="meaning-input" type="text" placeholder="Emotion" readonly>
+            </div>
+            <div class="input-part buttons-part">
+                <button id="generate-btn">get Kaomoji</button>
+                <button id="submit-btn">add to Wall</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/generate-emotion.js"></script>
+    <script src="js/wall.js"></script>
+</body>
+</html>
