@@ -1,0 +1,850 @@
+/* ----------- Mobile (up to 768px) ----------- */
+@media (max-width: 768px) {
+    /* index.html styles */
+    header, main, footer {
+      width: 100%;
+      padding: 10px;
+    }
+
+    .logo {
+      font-size: 32px;
+    }
+
+    nav ul {
+      gap: 15px;
+      padding: 8px 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav ul li a {
+      font-size: 14px;
+    }
+
+    .block {
+      margin-top: 0;
+    }
+
+    .block-1 {
+      min-height: auto;
+    }
+
+    .block-2 {
+      margin-bottom: 50px;
+    }
+
+    .columns {
+      flex-direction: column;
+      gap: 15px;
+      height: auto;
+    }
+
+    .column {
+      width: 100%;
+      padding: 10px;
+    }
+
+    .column-text {
+      width: 85%;
+      margin: 15px auto;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    .column-4 {
+      position: relative;
+      width: 100%;
+      height: 180px;
+      background-color: #000000;
+    }
+
+    .scrolling-text {
+      font-size: 13px;
+      line-height: 1.8;
+      width: 85%;
+      padding: 15px;
+      margin: 0 auto;
+      animation: scroll-up 50s linear infinite;
+    }
+
+    #sketch-wrapper canvas {
+      width: 100% !important;
+      height: auto !important;
+      max-width: 300px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    #footer-sketch-holder {
+      width: 80%;
+      max-width: 280px;
+      height: 100px;
+      margin: 10px auto;
+      display: block;
+      order: 3;
+    }
+
+    .footer-columns {
+      flex-direction: column;
+      align-items: center;
+      min-height: auto;
+      margin-bottom: 15px;
+      gap: 10px;
+    }
+
+    .footer-column {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer-column-1 {
+      order: 1;
+      margin: 10px auto;
+    }
+
+    .footer-column-2 {
+      order: 3;
+      justify-content: center;
+    }
+
+    .footer-column-3 {
+      order: 2;
+      justify-content: center;
+    }
+
+    .footer-text-left {
+      width: 85%;
+      margin: 10px auto;
+      font-size: 12px;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .socials {
+      margin: 10px auto;
+      justify-content: center;
+      order: 1;
+    }
+
+    .socials .fa {
+      font-size: 20px;
+      margin: 0 8px;
+    }
+
+    /* watch.html styles */
+    .content-container-watch {
+      padding: 10px;
+      margin-top: 80px;
+    }
+
+    .animation-grid {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .animation-row {
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .animation-box {
+      width: 100%;
+      max-width: 300px;
+      height: 150px;
+    }
+
+    .animation-box:hover {
+      transform: none;
+      width: 100%;
+      max-width: 300px;
+      opacity: 1;
+    }
+
+    .animation-row:hover .animation-box:not(:hover) {
+      width: 100%;
+      max-width: 300px;
+      opacity: 1;
+    }
+
+    .kaomoji-preview {
+      font-size: min(4vw, 16px);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      opacity: 1;
+    }
+
+    .animation-box canvas {
+      opacity: 1 !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    .animation-box:active .kaomoji-preview {
+      opacity: 0;
+    }
+
+    .animation-box:active canvas {
+      opacity: 1 !important;
+    }
+
+    /* forest.html styles */
+    .forest-page {
+      height: auto;
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+
+    #game-container {
+      width: 100%;
+      height: calc(100vh - 160px);
+      position: relative;
+      margin-bottom: 0;
+    }
+
+    #game-container canvas {
+      width: 100% !important;
+      height: 100% !important;
+      display: block;
+    }
+
+    .touch-controls {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      padding: 0 10px;
+      z-index: 10;
+    }
+
+    .touch-btn {
+      background-color: #000000;
+      color: #ffffff;
+      border: 2px solid #000000;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 80px;
+      text-align: center;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .touch-btn:active {
+      background-color: #ffb800;
+      color: #000000;
+    }
+
+    /* chat.html styles */
+    #chat-messages {
+      height: calc(100vh - 200px);
+      padding: 10px;
+      margin: 10px 15px;
+      overflow-y: auto;
+      font-size: 14px;
+    }
+
+    .message {
+      padding: 8px 12px;
+      margin: 5px 0;
+      border-radius: 10px;
+      max-width: 90%;
+    }
+
+    .message.user {
+      margin-left: 5%;
+    }
+
+    .message.bot {
+      margin-right: 5%;
+    }
+
+    .message img {
+      max-width: 90%;
+      border-radius: 10px;
+    }
+
+    #button-container {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin: 0 15px;
+    }
+
+    .trigger-btn {
+      padding: 8px 12px;
+      font-size: 14px;
+      border-radius: 10px;
+      margin: 5px 0;
+      width: 100%;
+      text-align: left;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .trigger-btn.active {
+      background-color: #ffb800;
+      color: #000000;
+    }
+
+    /* mirror.html styles */
+    main {
+      min-height: calc(100vh - 160px);
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #video-container {
+      max-width: 90%;
+      height: auto;
+      margin: 10px auto;
+    }
+
+    #video-container video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    #emotion-text {
+      font-size: 14px;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    #emotion-container {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px 0;
+    }
+
+    #emotion-container canvas {
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    #loading-container .loading-text {
+      font-size: 12px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin: 10px 0;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .kaomoji-btn {
+      padding: 8px 12px;
+      font-size: 14px;
+      border-radius: 10px;
+      margin: 5px 0;
+      width: 100%;
+      text-align: center;
+      font-family: 'JetBrains Mono', monospace;
+      background-color: #000000;
+      color: #ffffff;
+      border: 2px solid #000000;
+    }
+
+    .kaomoji-btn:active {
+      background-color: #ffb800;
+      color: #000000;
+    }
+
+    /* wall.html styles */
+    main {
+      min-height: calc(100vh - 160px);
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #word-wall {
+      max-width: 90%;
+      min-height: 200px;
+      margin: 10px auto;
+      position: relative;
+    }
+
+    .word-block {
+      font-size: 14px;
+      padding: 5px;
+      margin: 5px;
+      display: inline-block;
+    }
+
+    #kaomoji {
+      font-size: 14px;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    #emotion-name {
+      font-size: 14px;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    #description {
+      font-size: 12px;
+      margin: 10px 15px;
+      text-align: center;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin: 10px 0;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .kaomoji-btn {
+      padding: 8px 12px;
+      font-size: 14px;
+      border-radius: 10px;
+      margin: 5px 0;
+      width: 100%;
+      text-align: center;
+      font-family: 'JetBrains Mono', monospace;
+      background-color: #000000;
+      color: #ffffff;
+      border: 2px solid #000000;
+    }
+
+    .kaomoji-btn:active {
+      background-color: #ffb800;
+      color: #000000;
+    }
+  }
+
+  /* ----------- Tablets (769px – 1024px) ----------- */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* index.html styles */
+    header, main, footer {
+      width: 95%;
+      padding: 15px;
+    }
+
+    .logo {
+      font-size: 40px;
+    }
+
+    nav ul {
+      gap: 20px;
+      padding: 10px 30px;
+    }
+
+    nav ul li a {
+      font-size: 15px;
+    }
+
+    .block {
+      margin-top: -50px;
+    }
+
+    .block-1 {
+      min-height: 80vh;
+    }
+
+    .block-2 {
+      margin-bottom: 100px;
+    }
+
+    .columns {
+      flex-direction: row;
+      gap: 20px;
+      height: auto;
+    }
+
+    .column {
+      width: 50%;
+    }
+
+    .column-text {
+      width: 85%;
+      font-size: 13px;
+      line-height: 1.5;
+      margin: 20px auto;
+    }
+
+    .column-4 {
+      width: 25%;
+      height: 100vh;
+    }
+
+    .scrolling-text {
+      font-size: 15px;
+      line-height: 1.8;
+      width: 85%;
+      padding: 20px;
+      margin: 0 auto;
+    }
+
+    .sketch-wrapper canvas {
+      width: 100% !important;
+      height: auto !important;
+      max-width: 350px;
+      margin: 100px auto 20px;
+      display: block;
+    }
+
+    #footer-sketch-holder {
+      width: 320px;
+      height: 160px;
+      margin: 20px auto;
+      display: block;
+      order: 3;
+    }
+
+    .footer-columns {
+      flex-direction: row;
+      min-height: 200px;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .footer-column {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer-column-1 {
+      order: 1;
+      flex: 0 0 auto;
+      margin: 10px;
+    }
+
+    .footer-column-2 {
+      order: 3;
+      flex: 0 0 auto;
+      justify-content: center;
+    }
+
+    .footer-column-3 {
+      order: 2;
+      flex: 1;
+      justify-content: center;
+    }
+
+    .footer-text-left {
+      width: 85%;
+      font-size: 13px;
+      line-height: 1.4;
+      padding: 10px;
+      margin: 10px auto;
+    }
+
+    .socials {
+      margin: 10px auto;
+      justify-content: center;
+      order: 1;
+    }
+
+    .socials .fa {
+      font-size: 22px;
+      margin: 0 10px;
+    }
+
+    /* watch.html styles */
+    .content-container-watch {
+      padding: 15px;
+      margin-top: 90px;
+    }
+
+    .animation-grid {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .animation-row {
+      flex-direction: row;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .animation-box {
+      width: 350px;
+      height: 180px;
+    }
+
+    .animation-box:hover {
+      width: 400px;
+    }
+
+    .animation-row:hover .animation-box:not(:hover) {
+      width: 300px;
+    }
+
+    .kaomoji-preview {
+      font-size: min(4vw, 24px);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .animation-box canvas {
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    /* forest.html styles */
+    .forest-page {
+      height: auto;
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+
+    #game-container {
+      width: 95%;
+      height: calc(100vh - 180px);
+      margin: 0 auto;
+      margin-bottom: 0;
+      position: relative;
+    }
+
+    #game-container canvas {
+      width: 100% !important;
+      height: 100% !important;
+      display: block;
+    }
+
+    .touch-controls {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 15px;
+      width: 100%;
+      padding: 0 15px;
+      z-index: 10;
+    }
+
+    .touch-btn {
+      background-color: #000000;
+      color: #ffffff;
+      border: 2px solid #000000;
+      padding: 12px 25px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 100px;
+      text-align: center;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .touch-btn:active {
+      background-color: #ffb800;
+      color: #000000;
+    }
+
+    /* chat.html styles */
+    #chat-messages {
+      height: calc(100vh - 220px);
+      padding: 15px;
+      margin: 15px;
+      overflow-y: auto;
+      font-size: 15px;
+    }
+
+    .message {
+      padding: 10px 15px;
+      margin: 8px 0;
+      border-radius: 12px;
+      max-width: 95%;
+    }
+
+    .message.user {
+      margin-left: 5%;
+    }
+
+    .message.bot {
+      margin-right: 5%;
+    }
+
+    .message img {
+      max-width: 95%;
+      border-radius: 12px;
+    }
+
+    #button-container {
+      padding: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 0 15px;
+      justify-content: center;
+    }
+
+    .trigger-btn {
+      padding: 10px 15px;
+      font-size: 15px;
+      border-radius: 12px;
+      margin: 5px;
+      width: auto;
+      min-width: 120px;
+      text-align: center;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .trigger-btn.active {
+      background-color: #ffb800;
+      color: #000000;
+    }
+
+    /* mirror.html styles */
+    main {
+      min-height: calc(100vh - 180px);
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #video-container {
+      max-width: 95%;
+      height: auto;
+      margin: 15px auto;
+    }
+
+    #video-container video {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    #emotion-text {
+      font-size: 16px;
+      margin: 15px 0;
+      text-align: center;
+    }
+
+    #emotion-container {
+      width: 100%;
+      max-width: 400px;
+      margin: 15px 0;
+    }
+
+    #emotion-container canvas {
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    #loading-container .loading-text {
+      font-size: 14px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      margin: 15px 0;
+      width: 100%;
+      max-width: 400px;
+      justify-content: center;
+    }
+
+    .kaomoji-btn {
+      padding: 10px 15px;
+      font-size: 15px;
+      border-radius: 12px;
+      margin: 5px;
+      width: auto;
+      min-width: 120px;
+      text-align: center;
+      font-family: 'JetBrains Mono', monospace;
+      background-color: #000000;
+      color: #ffffff;
+      border: 2px solid #000000;
+    }
+
+    .kaomoji-btn:active {
+      background-color: #ffb800;
+      color: #000000;
+    }
+
+    /* wall.html styles */
+    main {
+      min-height: calc(100vh - 180px);
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #word-wall {
+      max-width: 95%;
+      min-height: 250px;
+      margin: 15px auto;
+      position: relative;
+    }
+
+    .word-block {
+      font-size: 15px;
+      padding: 8px;
+      margin: 8px;
+      display: inline-block;
+    }
+
+    #kaomoji {
+      font-size: 16px;
+      margin: 15px 0;
+      text-align: center;
+    }
+
+    #emotion-name {
+      font-size: 16px;
+      margin: 15px 0;
+      text-align: center;
+    }
+
+    #description {
+      font-size: 14px;
+      margin: 15px;
+      text-align: center;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      margin: 15px 0;
+      width: 100%;
+      max-width: 400px;
+      justify-content: center;
+    }
+
+    .kaomoji-btn {
+      padding: 10px 15px;
+      font-size: 15px;
+      border-radius: 12px;
+      margin: 5px;
+      width: auto;
+      min-width: 120px;
+      text-align: center;
+      font-family: 'JetBrains Mono', monospace;
+      background-color: #000000;
+      color: #ffffff;
+      border: 2px solid #000000;
+    }
+
+    .kaomoji-btn:active {
+      background-color: #ffb800;
+      color: #000000;
+    }
+  }

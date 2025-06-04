@@ -1,0 +1,78 @@
+{
+    "brain": [
+        {
+            "triggers": [
+                "hi",
+                "hello",
+                "say something"
+            ],
+            "responses": [
+                "(´• ω •`) hello, mate!",
+                "hi there ヽ(*・ω・)ﾉ",
+                "glad to see you! (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+            ]
+        },
+        {
+            "triggers": [
+                "who are you?"
+            ],
+            "responses": [
+                "↑_(ΦwΦ)Ψ i am a kaomoji bot! Do you want to try me?"
+            ]
+        },
+        {
+            "triggers": [
+                "yes!"
+            ],
+            "responses": [
+                "img:img/qr-code.png"
+            ]
+        },
+        {
+            "triggers": [
+                "tell me something nice!",
+                "show me a kaomoji",
+                "make a kaomoji"
+            ],
+            "responses": [
+                "(; ω ; )ヾ(´∀`* )",
+                "(´｡• ω •｡`) ♡",
+                "૮₍ ˶• ༝ •˶ ₎ა is this you?",
+                "this is us ヽ(≧◡≦)八(o^ ^o)ノ",
+                "ヾ(⌐■_■)ノ♪ just dance gonna be okay da-da-doo-doot-n"
+            ]
+        },
+        {
+            "triggers": [
+                "tell me something nice!",
+                "show me a kaomoji",
+                "make a kaomoji"
+            ],
+            "responses": [
+                "(; ω ; )ヾ(´∀`* )",
+                "(´｡• ω •｡`) ♡",
+                "૮₍ ˶• ༝ •˶ ₎ა is this you?",
+                "this is us ヽ(≧◡≦)八(o^ ^o)ノ",
+                "ヾ(⌐■_■)ノ♪ just dance gonna be okay da-da-doo-doot-n"
+            ]
+        },
+        {
+            "triggers": [
+                "tell me something nice!",
+                "show me a kaomoji",
+                "make a kaomoji"
+            ],
+            "responses": [
+                "(; ω ; )ヾ(´∀`* )",
+                "(´｡• ω •｡`) ♡",
+                "૮₍ ˶• ༝ •˶ ₎ა is this you?",
+                "this is us ヽ(≧◡≦)八(o^ ^o)ノ",
+                "ヾ(⌐■_■)ノ♪ just dance gonna be okay da-da-doo-doot-n"
+            ]
+        }
+    ],
+    "catchall": [
+        "It's too hard for me to understand",
+        "Ooops!"
+    ]
+}

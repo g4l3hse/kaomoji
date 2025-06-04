@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaoYao</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ml5js/Intro-ML-Arts-IMA@ml5-build-10-7-19/ml5_build/ml5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body class="mirror-page">
+    <header class="wall-header">
+        <div class="logo">
+            <a href="index.html">KaoYao</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="watch.html">flow</a></li>
+                <li><a href="map.html">map</a></li>
+                <li><a href="forest.html">forest</a></li>
+                <li><a href="mirror.html">mirror</a></li>
+                <li><a href="maze.html">labyrinth</a></li>
+                <li><a href="wall.html">wall</a></li>
+                <li><a href="chat.html">chat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="mirror-container">
+        <div id="emotion-label"></div>
+        <div id="emotion-word"></div>
+        <div id="kaomoji"></div>
+        <div id="description-mirror"></div>
+        <div id="landmarks-container-mirror">
+            <div id="video-canvas-wrapper">
+                <video id="video"></video>
+                <canvas id="canvas"></canvas>
+            </div>
+            <div id="progress-container">
+                <p>Sorting emotions...</p>
+                <div id="progress-bar-container">
+                    <div id="progress-bar"></div>
+                </div>
+            </div>
+            <div id="loading-container" class="loader"></div>
+        </div>
+    </div>
+
+    <div id="buttons-container">
+        <button id="start-button">again</button>
+        <button id="save-button">save it</button>
+    </div>
+
+    <script src="js/mirror.js"></script>
+</body>
+</html>

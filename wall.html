@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaoYao</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="wall-header">
+        <div class="logo"><a href="index.html">KaoYao</a></div>
+        <nav>
+            <ul>
+                <li><a href="watch.html">flow</a></li>
+                <li><a href="map.html">map</a></li>
+                <li><a href="forest.html">forest</a></li>
+                <li><a href="mirror.html">mirror</a></li>
+                <li><a href="maze.html">labyrinth</a></li>
+                <li><a href="#">wall</a></li>
+                <li><a href="chat.html">chat</a></li>
+            </ul>
+        </nav>
+    </header>
+<div class="content-container">
+            <div id="word-wall"></div>
+            <div class="divider"></div>
+            <div id="input-section">
+                <div class="section-kaomoji kaomoji-part">
+                    <div id="kaomoji" class="large-kaomoji"></div>
+                </div>
+                <div class="section-emotion description-part">
+                    <div id="emotion-name"></div>
+                    <div id="description">Description will appear here. <br>Hover kaomoji on the wall</div>
+                </div>
+                <div class="section-buttons buttons-part">
+                    <button id="generate-btn">get kaomoji</button>
+                    <button id="submit-btn">add on wall</button>
+                </div>
+            </div>
+        </div>
+    <script src="js/generate-emotion.js"></script>
+    <script src="js/wall.js"></script>
+</body>
+</html>

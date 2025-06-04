@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>KaoYao</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="#">KaoYao</a></div>
+        <nav>
+            <ul>
+                <li><a href="watch.html">flow</a></li>
+                <li><a href="map.html">map</a></li>
+                <li><a href="forest.html">forest</a></li>
+                <li><a href="mirror.html">mirror</a></li>
+                <li><a href="maze.html">labyrinth</a></li>
+                <li><a href="wall.html">wall</a></li>
+                <li><a href="chat.html">chat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <section class="block block-1">
+          <div id="sketch-holder"></div>
+      </section>
+      <section class="block block-2">
+          <div class="columns">
+              <div class="column column-1">
+                  <div class="column-text">
+                      <p>Kaomoji   <b>(´,,•ω•,,)♡</b>   is a special Japanese style of emoticon images based ◕  on the Japanese hieroglyphic system. They include all alphabetic systems: kanji, hiragana and katakana using punctuation marks <b>(•ิ_•ิ)?</b> and other symbols. The diversity of the kaomoji allows to turn emotions into a written text. The main difference with emoji <b>ヽ(≧◡≦)八😍ノ</b> is that emoji is a broad concept of pictogram that can depict  <b><i>ლ</i></b>  more than just emotions, while kaomoji aims mainly at displaying <br>the speaker's range of feelings (kao <b>顔</b> – "face" and moji <b>文字</b> - "symbol, written sign", while <b>絵</b> e - "picture"). </p>
+                  </div>
+                  <div class="column-text">
+                    <p>In 1872, Charles Darwin formed six basic emotional states: happiness <b>(´ ∀ ` *)</b>, sadness <b>( ; ω ; )</b>, fear <b>~(>_< ~)</b>, anger <b>٩(╬ʘ益ʘ╬)۶</b>, surprise <b>w(°ｏ°)w</b> and disgust <b>(；⌣_⌣)</b>. Since then, technological advances have changed the way we think about communication: new ways of interacting have emerged, face-to-face <b>(*＾ω＾)人(＾ω＾*)</b> interactions are no longer necessary, and it is possible to quickly contact anyone anywhere in the world. Now there are dozens of ways to communicate. The main struggle is that the stable associations inherent in human perception cannot really be interpreted unambiguously. For example, a smile 😃 can express joy, sadness, humility and not mean what it seems to mean. </p>
+                </div>
+                <div class="column-text">
+                    <p>The diversity of the kaomoji visual system allows to turn emotions into a written text. In many languages there are words which express unique emotions that cannot be translated, so mostly visualization of the emotion is necessary. Kaomoji, which includes linguistic, cultural and social aspects, can handle this task best. <b>ฅ(^◕ᴥ◕^)ฅ</b></p>
+                </div>
+              </div>
+              <div class="column column-2">
+                  <div class="column-text">
+                      <p>Often we limit ourselves with <b>(:</b> and <b>):</b> in text (in very rare cases with <b>:D</b>), although it's hard   <b>ლ(ಠ_ಠ ლ)</b>   enough to convey the whole emotional spectrum in two or three characters. If you imagine a person without nose 👃, ears 👂, eyebrows 👁 and other elements that Western emoticons lack, it would be hard to imagine what emotion could be expressed with such a face <b>ʕಠᴥಠʔ</b>. <br>However, kaomoji use all the possibilities of body language, thanks to which they manage to show any nuances of emotional state.</p>
+                  </div>
+              </div>
+              <div class="column column-3">
+                <div id="sketch-wrapper"></div>
+              </div>
+          </div>
+      </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+        <div class="footer-columns">
+            <div class="footer-column footer-column-1">
+                <div id="footer-sketch-holder"></div>
+            </div>
+            <div class="footer-column footer-column-2">
+                <div class="footer-text-left">
+                    <p class="socials"><a href="https://github.com/g4l3hse/kaomoji"><i class="fa fa-github"></i>find me here</a></p>
+                    <p class="socials"><a href="https://www.instagram.com/srv_del.ae/profilecard/?igsh=MjI2aDZhNjliOGJz"><i class="fa fa-instagram"></i>also here</a></p>
+                    <p class="socials"><a href="https://t.me/d4mb3ss"><i class="fa fa-mail-reply-all"></i>ask any q& here</a></p>
+                </div>
+            </div>
+            <div class="footer-column footer-column-3">
+              <div class="footer-text-left">
+                  <p>my name is Luisa.</p>
+                  <p>this is my web-art project about kaomoji – unique Japanese emoticon style based on a wide range of symbols</p>
+              </div>
+          </div>
+          <div class="column-4">
+            <div class="scrolling-text">
+            <div class="scrolling-content">
+                <p>A fleeting    moment of    ( ˙꒳​˙ ) joy</p>
+                <p>The    weight (♡-_-♡) of    unspoken     words</p>
+                <p>A spark       of    sudden (◎ ◎) inspiration</p>
+                <p>       The calm ┐(˘､˘)┌ before the storm</p>
+                <p>A          pang of quiet              regret <br>(; ω ;)</p>
+                <p>          (*ﾉωﾉ)             </p>
+                <p>            ( ´ ꒳ ` ) ♥︎ </p>
+                <p>   The warmth of a (⌒▽⌒)★ familiar    smile</p>
+                <p>A rush       of<br>          unbridled (((o(*°▽°*)o))) <br>           excitement</p>
+                <p>The ache <br>(＞ｍ＜) of distant       memories <br>          (ᗒᗣᗕ)</p>
+                <p>(つω`｡) A whisper    of       cautious hope</p>
+                <p>The    sting of    a sharp       betrayal o(TヘTo)</p>
+                <p>     A wave of overwhelming<br>  ヾ( ￣O￣)ツ relief</p>
+                <p>The glow    of <br>  Σ>―(〃°ω°〃)♡→<br>        newfound love</p>
+                <p>   A shadow (;;;*_*)             of           lingering doubt</p>
+                <p>The thrill {{ (>_<) }} of <br>      a daring leap</p>
+                <p>A sigh       of weary resignation</p>
+                <p>      The <br>          pulse of restless (. •́ _ʖ •̀ .)       anticipation</p>
+                <p>   A flicker of forgotten dreams</p>
+                <p>      The comfort <br>            (/ =ω=)/ <br>of       steady routine</p>
+                <p>            A       <br>jolt of unexpected <br>▓▒░(°◡°)░▒▓<br>         fear</p>
+                <p>The peace of a silent night <br>             (◎ ◎)</p>
+            </div>
+            <div class="scrolling-content">
+                <p>A fleeting    moment of    ( ˙꒳​˙ ) joy</p>
+                <p>The    weight (♡-_-♡) of    unspoken     words</p>
+                <p>A spark       of    sudden (◎ ◎) inspiration</p>
+                <p>       The calm ┐(˘､˘)┌ before the storm</p>
+                <p>A          pang of quiet              regret <br>(; ω ;)</p>
+                <p>          (*ﾉωﾉ)             </p>
+                <p>            ( ´ ꒳ ` ) ♥︎ </p>
+                <p>   The warmth of a (⌒▽⌒)★ familiar    smile</p>
+                <p>A rush       of<br>          unbridled (((o(*°▽°*)o))) <br>           excitement</p>
+                <p>The ache <br>(＞ｍ＜) of distant       memories <br>          (ᗒᗣᗕ)</p>
+                <p>(つω`｡) A whisper    of       cautious hope</p>
+                <p>The    sting of    a sharp       betrayal o(TヘTo)</p>
+                <p>     A wave of overwhelming<br>  ヾ( ￣O￣)ツ relief</p>
+                <p>The glow    of <br>  Σ>―(〃°ω°〃)♡→<br>        newfound love</p>
+                <p>   A shadow (;;;*_*)             of           lingering doubt</p>
+                <p>The thrill {{ (>_<) }} of <br>      a daring leap</p>
+                <p>A sigh       of weary resignation</p>
+                <p>      The <br>          pulse of restless (. •́ _ʖ •̀ .)       anticipation</p>
+                <p>   A flicker of forgotten dreams</p>
+                <p>      The comfort <br>            (/ =ω=)/ <br>of       steady routine</p>
+                <p>            A       <br>jolt of unexpected <br>▓▒░(°◡°)░▒▓<br>         fear</p>
+                <p>The peace of a silent night <br>             (◎ ◎)</p>
+            </div>
+            <div class="scrolling-content">
+                <p>A fleeting    moment of    ( ˙꒳​˙ ) joy</p>
+                <p>The    weight (♡-_-♡) of    unspoken     words</p>
+                <p>A spark       of    sudden (◎ ◎) inspiration</p>
+                <p>       The calm ┐(˘､˘)┌ before the storm</p>
+                <p>A          pang of quiet              regret <br>(; ω ;)</p>
+                <p>          (*ﾉωﾉ)             </p>
+                <p>            ( ´ ꒳ ` ) ♥︎ </p>
+                <p>   The warmth of a (⌒▽⌒)★ familiar    smile</p>
+                <p>A rush       of<br>          unbridled (((o(*°▽°*)o))) <br>           excitement</p>
+                <p>The ache <br>(＞ｍ＜) of distant       memories <br>          (ᗒᗣᗕ)</p>
+                <p>(つω`｡) A whisper    of       cautious hope</p>
+                <p>The    sting of    a sharp       betrayal o(TヘTo)</p>
+                <p>     A wave of overwhelming<br>  ヾ( ￣O￣)ツ relief</p>
+                <p>The glow    of <br>  Σ>―(〃°ω°〃)♡→<br>        newfound love</p>
+                <p>   A shadow (;;;*_*)             of           lingering doubt</p>
+                <p>The thrill {{ (>_<) }} of <br>      a daring leap</p>
+                <p>A sigh       of weary resignation</p>
+                <p>      The <br>          pulse of restless (. •́ _ʖ •̀ .)       anticipation</p>
+                <p>   A flicker of forgotten dreams</p>
+                <p>      The comfort <br>            (/ =ω=)/ <br>of       steady routine</p>
+                <p>            A       <br>jolt of unexpected <br>▓▒░(°◡°)░▒▓<br>         fear</p>
+                <p>The peace of a silent night <br>             (◎ ◎)</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</footer>
+    <script src="js/sketch.js"></script>
+    <script src="js/cat.js"></script>
+    <script src="js/cat2.js"></script>
+</body>
+</html>

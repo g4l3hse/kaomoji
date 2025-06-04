@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaoYao</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="maze-header">
+        <div class="logo"><a href="index.html">KaoYao</a></div>
+        <nav>
+            <ul class="add">
+                <li><a href="watch.html">flow</a></li>
+                <li><a href="map.html">map</a></li>
+                <li><a href="forest.html">forest</a></li>
+                <li><a href="mirror.html">mirror</a></li>
+                <li><a href="#">labyrinth</a></li>
+                <li><a href="wall.html">wall</a></li>
+                <li><a href="chat.html">chat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main-content">
+        <div id="text-section">
+            <div class="column-text">
+                <p>Emotions are an inalienable part of our lives. We feel them every day, it is an endless circle that cannot be pulled up. The world around us may change, but feelings will always be with us. We cannot live without emotions. Emotionless existence that will not allow us to move forward and see the changes around us, that is essential for a person.</p>
+            </div>
+            <div class="column-text">
+              <p>Every emotion is important. It is okay to be sad or afraid, because without these emotions we would never know what it means to have fun and strive forward. Emotional uplift helps us to go through all the difficulties of life easily, while negative feelings can slow us down. But until the world stands still, neither should we. We feel euphoria in contrast, without which the world would be dull. Every emotion deserves to be experienced. For every one that asketh receiveth; and he that seeketh findeth; and to him that knocketh it shall be opened.</p>
+          </div>
+        </div>
+        <div id="controls-section">
+            <div id="kaomoji-buttons">
+                <button class="kaomoji-btn" data-index="0">(´｡• ω •｡)</button>
+                <button class="kaomoji-btn" data-index="1">(*≧ω≦*)</button>
+                <button class="kaomoji-btn" data-index="2">(｡•́︿•̀｡)</button>
+                <button class="kaomoji-btn" data-index="3">(凸ಠ益ಠ)凸</button>
+                <button class="kaomoji-btn" data-index="4">(っ˘̩╭╮˘̩)っ</button>
+                <button class="kaomoji-btn" data-index="5">w(°ｏ°)w</button>
+                <button id="toggle-w">Difficulty</button>
+            </div>
+        </div>
+        <div id="maze-section">
+            <div id="sketch-holder" class="maze-sketch-holder"></div>
+        </div>
+    </div>
+
+    <div id="popup">
+        <p>You reached the exit!</p>
+        <button onclick="closePopup()">yay!</button>
+    </div>
+</body>
+<script>
+  document.addEventListener('keydown', function(e) {
+      if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+          e.preventDefault();
+      }
+  }, false);
+</script>
+<script src="js/maze.js"></script>
+</html>
